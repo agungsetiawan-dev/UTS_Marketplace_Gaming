@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0F172A">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Simulasi Rakit PC"
+            android:textColor="#38BDF8"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Pilih Motherboard" android:textColor="@color/white" android:layout_marginTop="15dp"/>
+        <Spinner android:id="@+id/spinMobo" android:layout_width="match_parent" android:layout_height="50dp" android:background="@android:drawable/btn_dropdown"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Pilih Processor" android:textColor="@color/white" android:layout_marginTop="10dp"/>
+        <Spinner android:id="@+id/spinCpu" android:layout_width="match_parent" android:layout_height="50dp" android:background="@android:drawable/btn_dropdown"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Pilih RAM" android:textColor="@color/white" android:layout_marginTop="10dp"/>
+        <Spinner android:id="@+id/spinRam" android:layout_width="match_parent" android:layout_height="50dp" android:background="@android:drawable/btn_dropdown"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Pilih Kartu Grafis (VGA)" android:textColor="@color/white" android:layout_marginTop="10dp"/>
+        <Spinner android:id="@+id/spinVga" android:layout_width="match_parent" android:layout_height="50dp" android:background="@android:drawable/btn_dropdown"/>
+
+        <View android:layout_width="match_parent" android:layout_height="2dp" android:background="#38BDF8" android:layout_marginVertical="20dp"/>
+
+        <TextView
+            android:id="@+id/tvTotalSimulasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total: Rp 0"
+            android:textAlignment="center"
+            android:textColor="#38BDF8"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnHitungSimulasi"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:text="CEK TOTAL HARGA"
+            android:backgroundTint="#38BDF8" />
+
+    </LinearLayout>
+</ScrollView>

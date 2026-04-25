@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:background="#1E293B"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/img_profile_header"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@mipmap/ic_launcher_round"
+        app:layout_constraintBottom_toTopOf="@id/tv_header_name"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView
+        android:id="@+id/tv_header_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gaming Member"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/tv_header_email"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_header_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="member@gamingstore.com"
+        android:textColor="#CCCCCC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="8dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
